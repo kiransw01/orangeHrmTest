@@ -6,11 +6,13 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.orangeHrm.base.BaseClass;
+import com.orangeHrm.pages.HomePage;
 import com.orangeHrm.pages.LoginPage;
 
 public class LoginPageTest extends BaseClass {
 	
 	LoginPage loginPage;
+	HomePage homePage;
 	
 	public LoginPageTest()
 	{
@@ -21,8 +23,10 @@ public class LoginPageTest extends BaseClass {
 	public void setUp()
 	{
 		initialization();
+		homePage=new HomePage();
 		loginPage=new LoginPage();
 	}
+	
 	@Test(priority=0)
 	public void verifyTitleTest()
 	{
@@ -40,10 +44,8 @@ public class LoginPageTest extends BaseClass {
 	@Test(priority=2)
 	public void verifyLoginTest()
 	{
-		loginPage.validateLogin(prop.getProperty("username"), prop.getProperty("password"));
-		
+		homePage=loginPage.validateLogin(prop.getProperty("username"), prop.getProperty("password"));	
 	}
-	
 	
 	@AfterMethod
 	public void tearDown()

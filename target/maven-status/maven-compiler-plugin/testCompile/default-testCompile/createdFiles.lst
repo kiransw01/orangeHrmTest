@@ -1,0 +1,4 @@
+com\orangeHrm\tests\AddUserPageTest.class
+com\orangeHrm\tests\LoginPageTest.class
+com\orangeHrm\tests\HomePageTest.class
+com\orangeHrm\tests\AdminPageTest.class

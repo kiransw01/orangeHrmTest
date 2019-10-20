@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
+  <test thread-count="1" verbose="0" name="Surefire test(failed)">
+    <classes>
+      <class name="com.orangeHrm.tests.AddUserPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="VerifyPageUrlTest"/>
+          <include name="validateAddUserTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.orangeHrm.tests.AddUserPageTest -->
+      <class name="com.orangeHrm.tests.HomePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyHomePageTitleTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.orangeHrm.tests.HomePageTest -->
+      <class name="com.orangeHrm.tests.LoginPageTest">
+        <methods>
+          <include name="verifyTitleTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.orangeHrm.tests.LoginPageTest -->
+      <class name="com.orangeHrm.tests.AdminPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyAdminPageLabelTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.orangeHrm.tests.AdminPageTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

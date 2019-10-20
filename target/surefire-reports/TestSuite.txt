@@ -1,0 +1,43 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 19, Failures: 4, Errors: 0, Skipped: 15, Time elapsed: 146.144 s <<< FAILURE! - in TestSuite
+setUp(com.orangeHrm.tests.AddUserPageTest)  Time elapsed: 56.762 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+timeout
+  (Session info: chrome=77.0.3865.120)
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'KIRAN-PC', ip: '192.168.1.106', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\Kiran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52488}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3fb613fb50ceb257d49c41c6656779dd
+	at com.orangeHrm.tests.AddUserPageTest.setUp(AddUserPageTest.java:32)
+
+setUp(com.orangeHrm.tests.AdminPageTest)  Time elapsed: 108.108 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+timeout
+  (Session info: chrome=77.0.3865.120)
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'KIRAN-PC', ip: '192.168.1.106', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\Kiran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52523}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b455cbf16a397103c687a2fb89af1012
+	at com.orangeHrm.tests.AdminPageTest.setUp(AdminPageTest.java:30)
+
+setUp(com.orangeHrm.tests.HomePageTest)  Time elapsed: 131.943 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#txtUsername"}
+  (Session info: chrome=77.0.3865.120)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'KIRAN-PC', ip: '192.168.1.106', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\Kiran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52561}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 522b1d233b3a1102666bc2b6b167ed3f
+*** Element info: {Using=id, value=txtUsername}
+	at com.orangeHrm.tests.HomePageTest.setUp(HomePageTest.java:28)
+
+verifyTitleTest(com.orangeHrm.tests.LoginPageTest)  Time elapsed: 0.106 s  <<< FAILURE!
+java.lang.AssertionError: Title is not matching expected [OrangeHRM] but found [opensource-demo.orangehrmlive.com]
+	at com.orangeHrm.tests.LoginPageTest.verifyTitleTest(LoginPageTest.java:34)
+

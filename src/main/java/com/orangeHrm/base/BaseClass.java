@@ -8,14 +8,18 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import com.orangeHrm.util.TestUtil;
+import com.orangeHrm.util.WebEventListener;
 
 public class BaseClass {
 	
 	
 	public static WebDriver driver;
 	public static Properties prop;
+	public static EventFiringWebDriver e_driver;
+	public static WebEventListener eventListener;
 
 	public BaseClass()
 	{
@@ -48,6 +52,12 @@ public class BaseClass {
 		{
 			System.setProperty("webdriver.gecko.driver", "G:\\Selenium\\drivers\\geckodriver.exe");
 		}
+		
+		
+		e_driver=new EventFiringWebDriver(driver);
+		eventListener=new WebEventListener();
+		e_driver.register(eventListener);
+		driver=e_driver;
 		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();

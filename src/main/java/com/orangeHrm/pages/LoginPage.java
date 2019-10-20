@@ -33,12 +33,11 @@ public class LoginPage extends BaseClass {
 		return logo.isDisplayed();
 	}
 
-	public AdminPage validateLogin(String user, String pwd) {
+	public HomePage validateLogin(String user, String pwd) {
 		username.sendKeys(user);
 		password.sendKeys(pwd);
 		loginbtn.click();
-		return new AdminPage();
-
+		return new HomePage();
 	}
 
 }
